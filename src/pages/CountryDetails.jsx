@@ -15,7 +15,7 @@ export default function CountryDetails({ countries }) {
             <h2>{country.name.common}</h2>
             <p>Capital:      {country.capital}</p>
             <p>Area:      {country.area} km²</p>
-            <p>Borders:      {country.borders.join(", ")}</p>
+            <p>Borders:{country.borders.join(", ")}</p>
         </div>
     </div>
   );
