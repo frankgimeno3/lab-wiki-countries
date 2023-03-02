@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+.detailsContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: #282c34;
+  color: whitesmoke;
+  justify-content: space-between;
+  padding: 5vw;
+}
+
+.countryCcolumn{
+  display: flex;
+  flex-direction: column;
+}
+li{
+  list-style: none;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px; 
+}
+li:hover {
+  background-color: #c6c6c6;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
+}
+.darkcontainer{
+  background-color: #282c34;
+}
+
