@@ -4,12 +4,13 @@ import "../App.css"
 
 export default function CountryDetails({ countries }) {
   const { alpha3Code } = useParams();
-  const country = countries.find((c) => c.alpha3Code === alpha3Code);
+  const country = countries.find((c) => c.alpha3Code === alpha3Code); 
+  let countrysrc = 'https://flagpedia.net/data/flags/icon/72x54/'+country.alpha2Code.toLowerCase()+'.png'
   return (
     <div className="detailsContainer">
         <CountriesList countries={countries} />
         <div className="countryCcolumn">
-            <img src={'https://flagpedia.net/data/flags/icon/72x54/'+country.alpha2Code+'.png'} alt="Country Flag" />
+            <img src={countrysrc} alt="Country Flag" />
             <p>Selected Country:</p>
             <h2>{country.name.common}</h2>
             <p>Capital:      {country.capital}</p>
